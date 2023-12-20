@@ -3,9 +3,14 @@ body{
     width: 100%;
     height: 100%;
     /* background-color: #7b67c3; */
-    background-image: linear-gradient(to right,rgba(99, 83, 159, 0.3),#451ad3);
+    background-image: linear-gradient(to right, #7b67c3,#4d1ee9);
     font-family: 'Varela Round', sans-serif;
 }
+
+
+
+
+
 #product_name{
     border: none;
     margin-top: 10px;
@@ -27,6 +32,7 @@ body{
    
     
 }
+
 .user_input{
     width: 30%;
     height: 400px;
@@ -54,6 +60,7 @@ body{
 #heading{
     text-align: center;
     font-size: 35px;
+    color: rgb(255,255,255);
 }
 hr{
     width: 95%;
@@ -73,7 +80,7 @@ i{
     font-size:xx-large;
     color: #008cff;
      margin-left:20px;
-    
+    /* font-size: 200px; */
 }
 .list_header{
     font-size: 20px;
@@ -81,27 +88,22 @@ i{
 
 #product_name_error{
     font-size: 15px;
+    color: red;
 }
 #amount_error{
     font-size: 15px;
+    color: red;
 }
 button{
-    font-size: 20px;
-    /* background-image: linear-gradient(rgba(99, 83, 159, 0.3),#451ad3); */
+    font-size: 20px;  
     width: 100%;
     height: 40px;
     border-radius: 5px;
     margin-top: 40px;
-    /* background-image: linear-gradient(to #7b67c3,red); */
-    
+    background-image: linear-gradient(to right, #008cff,#451ad3 );
+    color:rgb(255,255,255) ;
 }
 
-input{
-    margin-top: 10px;
-    font-size: 17px;
-    padding-left: 20px;
-
-}
 #frm{
     margin-top: 60px;
 }
@@ -112,5 +114,48 @@ h3{
 
 #create_element{
     display: flex;
-    gap: 50%;
+    gap: 30%;
 }
+#total{
+    display: flex;
+    gap: 40%;
+}
+#cc{
+    font-size: medium;
+    color: red;
+    display: none;
+    
+}
+
+#create_element:hover #cc{
+    display: block;
+}
+#pro_name{
+    font-size: 20px;
+    
+
+}
+#amount{
+    font-size: 20px;
+}
+#tot{
+    font-size: 20px;
+}
+#tdis_total{
+    font-size: 20px;
+}
+
+/* #new_element::-webkit-scrollbar-corner{
+    display: none;
+} */
+#new_element{
+    height: 100px;
+    display: block;
+    overflow: auto;
+}
+
+#create_element:nth-child(even) {
+    background-color: rgba(99, 83, 159, 0.3);
+  }
+
+  
