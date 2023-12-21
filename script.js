@@ -105,8 +105,12 @@ btn.addEventListener('click',(event)=>{
 
 
     del_icon.addEventListener('click',()=>{
+      if(confirm(`you want to delete the ${value_product}`) == true){
         del_icon.parentElement.remove();
         total.innerText=  parseInt(total.innerText)-parseInt(append_amount.innerText);
+        
+      }
+      
     })
    
     // sort.addEventListener('click',()=>{
